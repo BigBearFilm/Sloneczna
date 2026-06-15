@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Halo Pułtusk! — portal mieszkańców miasta i gminy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%232f72cf'/%3E%3Cpath fill='white' d='M32 8 L21 22 L21 52 L19 52 L19 56 L45 56 L45 52 L43 52 L43 22 Z'/%3E%3Ccircle cx='32' cy='30' r='4.5' fill='%232f72cf'/%3E%3Cpath fill='%232f72cf' d='M27 56 V44 a5 5 0 0 1 10 0 V56 Z'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+<!-- ============ PASEK GÓRNY ============ -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar__left">
+      <span class="topbar__date" id="topDate">niedziela, 15 czerwca 2026</span>
+      <span class="topbar__loc">Pułtusk · Mazowsze</span>
+    </div>
+    <div class="topbar__right">
+      <span class="topbar__weather">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><circle cx="12" cy="12" r="5"/><g stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.2" y1="4.2" x2="5.6" y2="5.6"/><line x1="18.4" y1="18.4" x2="19.8" y2="19.8"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.2" y1="19.8" x2="5.6" y2="18.4"/><line x1="18.4" y1="5.6" x2="19.8" y2="4.2"/></g></svg>
+        24°C
+      </span>
+      <span class="topbar__socials">
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13 10h3l.5-3H13V5.2c0-.9.3-1.5 1.6-1.5H16.5V1.1C16.2 1 15.2 1 14 1c-2.4 0-4 1.5-4 4.1V7H7v3h3v9h3v-9z"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23 7.5c-.2-1.3-.8-2-2-2.2C19 5 12 5 12 5s-7 0-9 .3C1.8 5.5 1.2 6.2 1 7.5.7 9 .7 12 .7 12s0 3 .3 4.5c.2 1.3.8 2 2 2.2C5 19 12 19 12 19s7 0 9-.3c1.2-.2 1.8-.9 2-2.2.3-1.5.3-4.5.3-4.5s0-3-.3-4.5zM9.7 15V9l5.3 3-5.3 3z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.1.4.3 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.1-1 .3-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.1-.4-.3-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.1 1-.3 2.2-.4C8.4 2.2 8.8 2.2 12 2.2z"/></svg></a>
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ MASTHEAD ============ -->
+<header class="masthead">
+  <div class="container">
+    <a class="logo" href="index.html">
+      <span class="logo__mark">
+        <svg class="logo__tower" viewBox="0 0 32 32" aria-hidden="true"><path fill="#fff" d="M16 3 L10 10 L10 27 L9 27 L9 30 L23 30 L23 27 L22 27 L22 10 Z"/><circle cx="16" cy="15" r="2.4" fill="rgba(13,42,86,0.32)"/><path fill="rgba(13,42,86,0.32)" d="M13.4 30 V23.6 a2.6 2.6 0 0 1 5.2 0 V30 Z"/></svg>
+      </span>
+      <span class="logo__text">
+        <span class="logo__word"><span class="halo">Halo</span> <span class="city">Pułtusk</span><span class="bang">!</span></span>
+        <span class="logo__tag">Portal mieszkańców miasta i gminy</span>
+      </span>
+    </a>
+  </div>
+</header>
+
+<!-- ============ NAWIGACJA ============ -->
+<nav class="nav">
+  <div class="container">
+    <button class="nav__burger" type="button" aria-label="Rozwiń menu" aria-expanded="false">
+      <span class="nav__burger-bars"><span></span><span></span><span></span></span>
+      Menu
+    </button>
+    <div class="nav__links">
+      <a href="index.html" class="is-active">Strona główna</a>
+      <a href="#">Miasto</a>
+      <a href="#">Region</a>
+      <a href="#">Sport</a>
+      <a href="#">Kultura</a>
+      <a href="#">Wydarzenia</a>
+      <a href="#">Ogłoszenia</a>
+    </div>
+    <div class="nav__right">
+      <div class="nav__search" aria-label="Szukaj">
+        <svg viewBox="0 0 24 24"><path d="M21 20l-5.2-5.2a7 7 0 10-1.4 1.4L19.6 21.4 21 20zM5 10a5 5 0 1110 0 5 5 0 01-10 0z"/></svg>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ PASEK PILNE ============ -->
+<div class="breaking">
+  <div class="container">
+    <div class="breaking__label"><span class="dot"></span>Pilne</div>
+    <div class="breaking__track">
+      <div class="breaking__move">
+        <span><b>Utrudnienia</b> na moście na Narwi — prace potrwają do piątku, wyznaczono objazdy ul. Mickiewicza.</span>
+        <span><b>Pogoda:</b> IMGW ostrzega przed upałem, w weekend nawet 31°C.</span>
+        <span><b>Sport:</b> Nadnarwianka zagra u siebie z Mławianką w sobotę o 17:00.</span>
+        <span><b>Utrudnienia</b> na moście na Narwi — prace potrwają do piątku, wyznaczono objazdy ul. Mickiewicza.</span>
+        <span><b>Pogoda:</b> IMGW ostrzega przed upałem, w weekend nawet 31°C.</span>
+        <span><b>Sport:</b> Nadnarwianka zagra u siebie z Mławianką w sobotę o 17:00.</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ TREŚĆ + SIDEBAR ============ -->
+<div class="container">
+  <div class="page">
+    <!-- KOLUMNA GŁÓWNA -->
+    <div class="page__main">
+
+      <!-- Hero -->
+      <section class="hero">
+        <a class="lead" href="#" onclick="return false;">
+          <div class="cover"><img src="https://picsum.photos/seed/pultusk-narew-river/1200/760" alt="" loading="eager" /></div>
+          <div class="lead__veil"></div>
+          <div class="lead__body">
+            <span class="tag tag--turystyka">Turystyka</span>
+            <h2 class="lead__title">Gondole znów pływają kanałami. „Wenecja Mazowsza" rusza z sezonem</h2>
+            <p class="lead__excerpt">Spod zamkowego wzgórza wypłynęły pierwsze łodzie. Rejsy po kanałach Narwi potrwają do końca września, a w weekendy zaplanowano kursy z przewodnikiem.</p>
+            <div class="lead__meta"><span>Redakcja Halo Pułtusk</span><span>· 14 czerwca 2026</span></div>
+          </div>
+        </a>
+        <div class="hero__minis">
+          <a class="mini" href="#" onclick="return false;">
+            <div class="cover"><img src="https://picsum.photos/seed/pultusk-stadium-football/700/440" alt="" /></div>
+            <div class="mini__veil"></div>
+            <div class="mini__body">
+              <span class="tag tag--sport">Sport</span>
+              <h3 class="mini__title">Nadnarwianka wygrywa derby i awansuje na trzecie miejsce</h3>
+            </div>
+          </a>
+          <a class="mini" href="#" onclick="return false;">
+            <div class="cover"><img src="https://picsum.photos/seed/pultusk-market-square-evening/700/440" alt="" /></div>
+            <div class="mini__veil"></div>
+            <div class="mini__body">
+              <span class="tag tag--wydarzenia">Wydarzenia</span>
+              <h3 class="mini__title">Jarmark Świętojański na rynku. Sprawdź pełny program</h3>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Polecane (2 klikalne + 1 zwykły materiał) -->
+      <section class="section">
+        <div class="section__head">
+          <h2 class="section__title">Rozmowy i materiały redakcji</h2>
+        </div>
+        <div class="picks">
+          <a class="pick" href="artykul-zawistowski.html">
+            <div class="cover cover--grayscreen"></div>
+            <div class="pick__body">
+              <span class="tag tag--miasto">Zdrowie i społeczeństwo</span>
+              <h3 class="pick__title">ANTONI ZAWISTOWSKI: „ZDROWIE PSYCHICZNE NASZYCH DZIECI JEST WARTOŚCIĄ NIE DO PRZECENIENIA”</h3>
+              <p class="pick__excerpt">Kandydat na burmistrza mówi o odpowiedzialności dorosłych, bezpieczeństwie w szkołach i panelu poświęconym zdrowiu psychicznemu dzieci i młodzieży.</p>
+              <span class="pick__badge">do postprodukcji · grayscreen</span>
+            </div>
+          </a>
+          <a class="pick" href="artykul-zawistowska.html">
+            <div class="cover cover--grayscreen"></div>
+            <div class="pick__body">
+              <span class="tag tag--kultura">Ludzie i styl życia</span>
+              <h3 class="pick__title">ALINA ZAWISTOWSKA: „KOBIETA NIE POWINNA CAŁE ŻYCIE CZEKAĆ, AŻ KTOŚ DA JEJ MIEJSCE”</h3>
+              <p class="pick__excerpt">Rozmowa o budowaniu własnego głosu w sieci, kobiecej niezależności i projekcie „Alina Lifestyle”.</p>
+              <span class="pick__badge">do postprodukcji · grayscreen</span>
+            </div>
+          </a>
+          <article class="pick pick--static">
+            <div class="cover"><img src="https://picsum.photos/seed/pultusk-local-community/800/450" alt="Mieszkańcy podczas lokalnego wydarzenia w Pułtusku" /></div>
+            <div class="pick__body">
+              <span class="tag tag--wydarzenia">Wydarzenia</span>
+              <h3 class="pick__title">Rodzinny piknik nad Narwią przyciągnął mieszkańców</h3>
+              <p class="pick__excerpt">Koncerty, animacje dla dzieci i stoiska lokalnych organizacji wypełniły bulwary przez całe popołudnie.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Najnowsze -->
+      <section class="section" style="padding-top:6px;">
+        <div class="section__head">
+          <h2 class="section__title">Najnowsze</h2>
+          <a class="section__more" href="#">Więcej →</a>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <div class="card__media"><div class="cover"><img src="https://picsum.photos/seed/pultusk-roadworks/640/440" alt="" /></div></div>
+            <div class="card__body">
+              <span class="tag tag--miasto">Miasto</span>
+              <h3 class="card__title">Rusza przebudowa ulicy Białowiejskiej. Utrudnienia do jesieni</h3>
+              <p class="card__excerpt">Drogowcy wchodzą na kolejny odcinek. Powstanie nowa nawierzchnia, chodniki i ścieżka rowerowa.</p>
+              <div class="card__meta"><span>Marek Wiśniewski</span><span class="dot"></span><span>14 cze 2026</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__media"><div class="cover"><img src="https://picsum.photos/seed/pultusk-kayak-pier/640/440" alt="" /></div></div>
+            <div class="card__body">
+              <span class="tag tag--miasto">Miasto</span>
+              <h3 class="card__title">Nowe pomosty i przystań kajakowa nad Narwią gotowe na sezon</h3>
+              <p class="card__excerpt">Inwestycja za blisko 2 mln zł. Z przystani skorzystają mieszkańcy, turyści i organizatorzy spływów.</p>
+              <div class="card__meta"><span>Anna Kowalczyk</span><span class="dot"></span><span>13 cze 2026</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__media"><div class="cover"><img src="https://picsum.photos/seed/pultusk-meteorite-museum/640/440" alt="" /></div></div>
+            <div class="card__body">
+              <span class="tag tag--kultura">Kultura</span>
+              <h3 class="card__title">Muzeum Regionalne otwiera wystawę o meteorycie pułtuskim</h3>
+              <p class="card__excerpt">W wieży ratuszowej zobaczymy oryginalne okazy „deszczu kamieni" z 1868 roku i nowe multimedia.</p>
+              <div class="card__meta"><span>Tomasz Dąbrowski</span><span class="dot"></span><span>12 cze 2026</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__media"><div class="cover"><img src="https://picsum.photos/seed/pultusk-school-renovation/640/440" alt="" /></div></div>
+            <div class="card__body">
+              <span class="tag tag--miasto">Miasto</span>
+              <h3 class="card__title">Termomodernizacja Szkoły Podstawowej nr 4 na finiszu</h3>
+              <p class="card__excerpt">Nowa elewacja, wymiana instalacji i fotowoltaika. Uczniowie wrócą do odnowionych sal we wrześniu.</p>
+              <div class="card__meta"><span>Anna Kowalczyk</span><span class="dot"></span><span>11 cze 2026</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Region -->
+      <section class="section" style="padding-top:6px;">
+        <div class="section__head">
+          <h2 class="section__title">Region</h2>
+          <a class="section__more" href="#">Więcej →</a>
+        </div>
+        <div class="row-list">
+          <article class="row">
+            <div class="row__media"><div class="cover"><img src="https://picsum.photos/seed/pultusk-fire-truck/320/220" alt="" /></div></div>
+            <div>
+              <span class="tag tag--region">Region</span>
+              <h3 class="row__title">Strażacy z Pułtuska odebrali nowy wóz ratowniczo-gaśniczy</h3>
+              <p class="row__excerpt">Pojazd trafił do jednostki dzięki dofinansowaniu z budżetu województwa i środkom gminy.</p>
+              <div class="row__meta"><span>Redakcja</span><span>·</span><span>11 cze 2026</span></div>
+            </div>
+          </article>
+          <article class="row">
+            <div class="row__media"><div class="cover"><img src="https://picsum.photos/seed/pultusk-university-campus/320/220" alt="" /></div></div>
+            <div>
+              <span class="tag tag--region">Region</span>
+              <h3 class="row__title">Akademia Humanistyczna zaprasza na dni otwarte</h3>
+              <p class="row__excerpt">Kandydaci zwiedzą zamkowy kampus i poznają nowe kierunki studiów na rok akademicki 2026/2027.</p>
+              <div class="row__meta"><span>Tomasz Dąbrowski</span><span>·</span><span>10 cze 2026</span></div>
+            </div>
+          </article>
+          <article class="row">
+            <div class="row__media"><div class="cover"><img src="https://picsum.photos/seed/pultusk-budget-meeting/320/220" alt="" /></div></div>
+            <div>
+              <span class="tag tag--miasto">Miasto</span>
+              <h3 class="row__title">Budżet obywatelski 2026. Mieszkańcy zdecydują o 1,2 mln złotych</h3>
+              <p class="row__excerpt">Do podziału rekordowa pula. Wnioski można składać do końca miesiąca w urzędzie i online.</p>
+              <div class="row__meta"><span>Marek Wiśniewski</span><span>·</span><span>9 cze 2026</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <!-- SIDEBAR (od góry) -->
+    <aside class="page__side">
+      <div class="widget">
+        <div class="widget__head">Najczęściej czytane</div>
+        <div class="widget__body" style="padding-bottom:6px;">
+          <ol class="popular">
+            <li><div><div class="popular__title">Gondole znów pływają kanałami. „Wenecja Mazowsza" rusza z sezonem</div><div class="popular__meta">Turystyka · 14 cze</div></div></li>
+            <li><div><div class="popular__title">Nadnarwianka wygrywa derby i awansuje na trzecie miejsce</div><div class="popular__meta">Sport · 13 cze</div></div></li>
+            <li><div><div class="popular__title">Budżet obywatelski 2026. Mieszkańcy zdecydują o 1,2 mln zł</div><div class="popular__meta">Miasto · 9 cze</div></div></li>
+            <li><div><div class="popular__title">Rusza przebudowa ulicy Białowiejskiej. Utrudnienia do jesieni</div><div class="popular__meta">Miasto · 14 cze</div></div></li>
+            <li><div><div class="popular__title">Muzeum otwiera wystawę o meteorycie pułtuskim</div><div class="popular__meta">Kultura · 12 cze</div></div></li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="widget weather">
+        <div class="widget__head">Pogoda · Pułtusk</div>
+        <div class="weather__now">
+          <div class="weather__temp">24°</div>
+          <div>
+            <div class="weather__desc">Słonecznie</div>
+            <div class="weather__loc">odczuwalna 26° · wiatr 12 km/h</div>
+          </div>
+        </div>
+        <div class="weather__days">
+          <div class="weather__day">pon<b>27°</b></div>
+          <div class="weather__day">wt<b>29°</b></div>
+          <div class="weather__day">śr<b>31°</b></div>
+          <div class="weather__day">czw<b>28°</b></div>
+          <div class="weather__day">pt<b>25°</b></div>
+        </div>
+      </div>
+
+      <div class="news-signup">
+        <h4>Newsletter</h4>
+        <p>Najważniejsze wydarzenia z Pułtuska i okolic prosto na Twoją skrzynkę.</p>
+        <form onsubmit="return false;">
+          <input type="email" placeholder="Twój e-mail" />
+          <button type="submit">Zapisz</button>
+        </form>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- ============ PAS KULTURA ============ -->
+<div class="band">
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title">Kultura i wydarzenia</h2>
+        <a class="section__more" href="#">Kalendarz imprez →</a>
+      </div>
+      <div class="cards cards--3">
+        <article class="card">
+          <div class="card__media"><div class="cover"><img src="https://picsum.photos/seed/pultusk-river-night-festival/640/440" alt="" /></div></div>
+          <div class="card__body">
+            <span class="tag tag--wydarzenia">Wydarzenia</span>
+            <h3 class="card__title">Noc Świętojańska nad Narwią. Wianki popłyną spod zamku</h3>
+            <p class="card__excerpt">Koncerty, food trucki i pokaz ogni. Kulminacja w sobotni wieczór na bulwarach.</p>
+            <div class="card__meta"><span>23 cze 2026</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__media"><div class="cover"><img src="https://picsum.photos/seed/pultusk-basilica-organ-concert/640/440" alt="" /></div></div>
+          <div class="card__body">
+            <span class="tag tag--kultura">Kultura</span>
+            <h3 class="card__title">Koncert w Bazylice zakończył tegoroczny sezon organowy</h3>
+            <p class="card__excerpt">Komplet publiczności i owacje na stojąco po finałowym wykonaniu Bacha.</p>
+            <div class="card__meta"><span>8 cze 2026</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__media"><div class="cover"><img src="https://picsum.photos/seed/pultusk-run-marathon/640/440" alt="" /></div></div>
+          <div class="card__body">
+            <span class="tag tag--sport">Sport</span>
+            <h3 class="card__title">Bieg Wokół Pułtuska. Rekordowa frekwencja na rynku</h3>
+            <p class="card__excerpt">Ponad 600 biegaczy wystartowało z najdłuższego rynku w Europie.</p>
+            <div class="card__meta"><span>1 cze 2026</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ STOPKA ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="logo logo--footer">
+          <span class="logo__mark">
+            <svg class="logo__tower" viewBox="0 0 32 32" aria-hidden="true"><path fill="#fff" d="M16 3 L10 10 L10 27 L9 27 L9 30 L23 30 L23 27 L22 27 L22 10 Z"/><circle cx="16" cy="15" r="2.4" fill="rgba(13,42,86,0.32)"/><path fill="rgba(13,42,86,0.32)" d="M13.4 30 V23.6 a2.6 2.6 0 0 1 5.2 0 V30 Z"/></svg>
+          </span>
+          <span class="logo__word"><span class="halo">Halo</span> <span class="city">Pułtusk</span><span class="bang">!</span></span>
+        </div>
+        <p>Lokalny portal informacyjny mieszkańców miasta i gminy Pułtusk. Piszemy o tym, co dzieje się tuż za rogiem.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13 10h3l.5-3H13V5.2c0-.9.3-1.5 1.6-1.5H16.5V1.1C16.2 1 15.2 1 14 1c-2.4 0-4 1.5-4 4.1V7H7v3h3v9h3v-9z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23 7.5c-.2-1.3-.8-2-2-2.2C19 5 12 5 12 5s-7 0-9 .3C1.8 5.5 1.2 6.2 1 7.5.7 9 .7 12 .7 12s0 3 .3 4.5c.2 1.3.8 2 2 2.2C5 19 12 19 12 19s7 0 9-.3c1.2-.2 1.8-.9 2-2.2.3-1.5.3-4.5.3-4.5s0-3-.3-4.5zM9.7 15V9l5.3 3-5.3 3z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.1.4.3 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.1-1 .3-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.1-.4-.3-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.1 1-.3 2.2-.4C8.4 2.2 8.8 2.2 12 2.2z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h5>Działy</h5>
+        <ul>
+          <li><a href="index.html">Miasto</a></li>
+          <li><a href="index.html">Region</a></li>
+          <li><a href="index.html">Sport</a></li>
+          <li><a href="index.html">Kultura</a></li>
+          <li><a href="index.html">Wydarzenia</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Serwis</h5>
+        <ul>
+          <li><a href="#">O nas</a></li>
+          <li><a href="#">Kontakt z redakcją</a></li>
+          <li><a href="#">Ogłoszenia</a></li>
+          <li><a href="#">Zgłoś temat</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Kontakt</h5>
+        <ul>
+          <li><a href="#">Rynek 1, 06-100 Pułtusk</a></li>
+          <li><a href="#">redakcja@halopultusk.pl</a></li>
+          <li><a href="#">tel. 23 000 00 00</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bar">
+      <span>© 2026 Halo Pułtusk! — wszystkie prawa zastrzeżone. Makieta demonstracyjna.</span>
+      <span><a href="#">Polityka prywatności</a> · <a href="#">Regulamin</a> · <a href="#">RODO</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Data po polsku w pasku górnym
+  (function () {
+    try {
+      var d = new Date();
+      var s = d.toLocaleDateString('pl-PL', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+      document.getElementById('topDate').textContent = s;
+    } catch (e) {}
+  })();
+
+  // Menu mobilne (hamburger)
+  (function () {
+    var nav = document.querySelector('.nav');
+    var burger = nav && nav.querySelector('.nav__burger');
+    if (!burger) return;
+    burger.addEventListener('click', function () {
+      var open = nav.classList.toggle('is-open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.querySelectorAll('.nav__links a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        nav.classList.remove('is-open');
+        burger.setAttribute('aria-expanded', 'false');
+      });
+    });
+  })();
+</script>
+</body>
+</html>
