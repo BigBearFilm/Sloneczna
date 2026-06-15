@@ -8,30 +8,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%232f72cf'/%3E%3Cpath fill='white' d='M32 8 L21 22 L21 52 L19 52 L19 56 L45 56 L45 52 L43 52 L43 22 Z'/%3E%3Ccircle cx='32' cy='30' r='4.5' fill='%232f72cf'/%3E%3Cpath fill='%232f72cf' d='M27 56 V44 a5 5 0 0 1 10 0 V56 Z'/%3E%3C/svg%3E" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2716%27%20fill%3D%27%232f72cf%27/%3E%3Cpath%20fill%3D%27%23ffffff%27%20d%3D%27M14%2012h26a8%208%200%200%201%208%208v11a8%208%200%200%201-8%208H27.5L18%2048v-9H14a8%208%200%200%201-8-8V20a8%208%200%200%201%208-8z%27/%3E%3Ccircle%20cx%3D%2718.5%27%20cy%3D%2725.5%27%20r%3D%272.7%27%20fill%3D%27%232f72cf%27/%3E%3Ccircle%20cx%3D%2727%27%20cy%3D%2725.5%27%20r%3D%272.7%27%20fill%3D%27%232f72cf%27/%3E%3Ccircle%20cx%3D%2735.5%27%20cy%3D%2725.5%27%20r%3D%272.7%27%20fill%3D%27%232f72cf%27/%3E%3Cpath%20fill%3D%27%235b98f3%27%20d%3D%27M49.5%2010.5c4.7%202.9%208.6%203.4%208.6%203.4v10.8c0%206.7-4%2012-8.6%2015.7-4.6-3.7-8.6-9-8.6-15.7V13.9s3.9-.5%208.6-3.4z%27/%3E%3Cpath%20fill%3D%27%23f0c640%27%20d%3D%27M48.5%2016.6h2v14.1h-2z%27/%3E%3Cpath%20fill%3D%27%23f0c640%27%20d%3D%27M43.9%2020.4h11.3v2.1H43.9z%27/%3E%3Cpath%20fill%3D%27%23f0c640%27%20d%3D%27M44.5%2016.7h2v10.3c0%201.4.4%202.4%201.3%203.2.9.8%202%20.9%203%201%20.9%200%201.8-.3%202.6-1l1%201.6c-1.1.8-2.5%201.3-4%201.3-1.7%200-3.2-.5-4.5-1.6-1.2-1-1.4-2.6-1.4-4.4V16.7z%27/%3E%3Cpath%20fill%3D%27%23f0c640%27%20d%3D%27M43.4%2016.7a3.2%203.2%200%200%201%203.2-3.2h.8v1.9h-.7a1.2%201.2%200%200%200-1.2%201.2v1.3h-2.1v-1.2z%27/%3E%3C/svg%3E" />
 </head>
 <body>
-
-<!-- ============ PASEK GÓRNY ============ -->
-<div class="topbar">
-  <div class="container">
-    <div class="topbar__left">
-      <span class="topbar__date" id="topDate">niedziela, 15 czerwca 2026</span>
-      <span class="topbar__loc">Pułtusk · Mazowsze</span>
-    </div>
-    <div class="topbar__right">
-      <span class="topbar__weather">
-        <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><circle cx="12" cy="12" r="5"/><g stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.2" y1="4.2" x2="5.6" y2="5.6"/><line x1="18.4" y1="18.4" x2="19.8" y2="19.8"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.2" y1="19.8" x2="5.6" y2="18.4"/><line x1="18.4" y1="5.6" x2="19.8" y2="4.2"/></g></svg>
-        24°C
-      </span>
-      <span class="topbar__socials">
-        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13 10h3l.5-3H13V5.2c0-.9.3-1.5 1.6-1.5H16.5V1.1C16.2 1 15.2 1 14 1c-2.4 0-4 1.5-4 4.1V7H7v3h3v9h3v-9z"/></svg></a>
-        <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23 7.5c-.2-1.3-.8-2-2-2.2C19 5 12 5 12 5s-7 0-9 .3C1.8 5.5 1.2 6.2 1 7.5.7 9 .7 12 .7 12s0 3 .3 4.5c.2 1.3.8 2 2 2.2C5 19 12 19 12 19s7 0 9-.3c1.2-.2 1.8-.9 2-2.2.3-1.5.3-4.5.3-4.5s0-3-.3-4.5zM9.7 15V9l5.3 3-5.3 3z"/></svg></a>
-        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.1.4.3 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.1-1 .3-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.1-.4-.3-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.1 1-.3 2.2-.4C8.4 2.2 8.8 2.2 12 2.2z"/></svg></a>
-      </span>
-    </div>
-  </div>
-</div>
 
 <!-- ============ MASTHEAD ============ -->
 <header class="masthead">
@@ -46,7 +25,10 @@
         <span class="logo__tag">Portal mieszkańców miasta i gminy</span>
       </span>
     </a>
-    
+    <div class="city-sign" aria-label="Pułtusk, Mazowsze">
+      <img src="images/herb-pultuska.png" alt="Herb Pułtuska" />
+      <span><strong>Pułtusk</strong><small>Mazowsze</small></span>
+    </div>
   </div>
 </header>
 
@@ -89,11 +71,11 @@
       <p class="article__lead">Jeszcze niedawno mieszkańcy Pułtuska znali ją przede wszystkim jako żonę Antoniego Zawistowskiego. Dziś Alina Zawistowska coraz śmielej buduje własną markę w sieci. Jej profil „Alina Lifestyle” zyskuje nowych obserwujących, a ona sama udowadnia, że na zmianę nigdy nie jest za późno.</p>
       <div class="article__meta">
         <span class="article__author">
-          <span class="article__avatar"><img src="https://picsum.photos/seed/halo-redakcja/80/80" alt="" /></span>
-          Redakcja Halo Pułtusk
+          <span class="article__avatar article__avatar--brand" aria-hidden="true">JZ</span>
+          Joanna Zalewska
         </span>
         <span>·</span>
-        <span id="artDate">15 czerwca 2026</span>
+        <span id="artDate">maj 2026</span>
         <span>·</span>
         <span>czas czytania: 4 min</span>
       </div>
@@ -143,11 +125,11 @@
 
     <!-- Autor -->
     <div class="authorbox">
-      <div class="authorbox__img"><img src="https://picsum.photos/seed/halo-redakcja/140/140" alt="" /></div>
+      <div class="authorbox__img authorbox__img--brand" aria-hidden="true">JZ</div>
       <div>
-        <div class="authorbox__name">Redakcja Halo Pułtusk</div>
-        <div class="authorbox__role">Zespół redakcyjny</div>
-        <p class="authorbox__bio">Piszemy o sprawach miasta i gminy Pułtusk — inwestycjach, kulturze, sporcie i codziennym życiu mieszkańców. Masz temat? Napisz do nas.</p>
+        <div class="authorbox__name">Joanna Zalewska</div>
+        <div class="authorbox__role">Reporterka działu Ludzie i styl życia</div>
+        <p class="authorbox__bio">Pisze o mieszkańcach, lokalnych trendach i życiu codziennym miasta. Lubi rozmowy o stylu życia, relacjach społecznych i osobistych historiach z Pułtuska.</p>
       </div>
     </div>
   </article>
@@ -159,19 +141,19 @@
     </div>
     <div class="cards cards--2">
       <article class="card">
-        <div class="card__media"><div class="cover"><img src="https://picsum.photos/seed/pultusk-narew-river/640/440" alt="" /></div></div>
+        <div class="card__media"><div class="cover"><img src="images/rejs_narwia.jpg" alt="Rejs łodzią po Narwi w Pułtusku" /></div></div>
         <div class="card__body">
           <span class="tag tag--turystyka">Turystyka</span>
           <h3 class="card__title">Gondole znów pływają kanałami. „Wenecja Mazowsza" rusza z sezonem</h3>
-          <div class="card__meta"><span>14 cze 2026</span></div>
+          <div class="card__meta"><span>maj 2026</span></div>
         </div>
       </article>
       <article class="card">
-        <div class="card__media"><div class="cover"><img src="https://picsum.photos/seed/pultusk-stadium-football/640/440" alt="" /></div></div>
+        <div class="card__media"><div class="cover"><img src="images/derby.jpg" alt="Mecz piłkarski Nadnarwianki Pułtusk" /></div></div>
         <div class="card__body">
           <span class="tag tag--sport">Sport</span>
           <h3 class="card__title">Nadnarwianka wygrywa derby i awansuje na trzecie miejsce</h3>
-          <div class="card__meta"><span>13 cze 2026</span></div>
+          <div class="card__meta"><span>maj 2026</span></div>
         </div>
       </article>
     </div>
@@ -222,12 +204,12 @@
         <ul>
           <li><a href="#">Rynek 1, 06-100 Pułtusk</a></li>
           <li><a href="#">redakcja@halopultusk.pl</a></li>
-          <li><a href="#">tel. 23 000 00 00</a></li>
+          <li><a href="#">tel. +48 23 692 74 21</a></li>
         </ul>
       </div>
     </div>
     <div class="footer__bar">
-      <span>© 2026 Halo Pułtusk! — wszystkie prawa zastrzeżone. Makieta demonstracyjna.</span>
+      <span>© 2026 Halo Pułtusk! — wszystkie prawa zastrzeżone.</span>
       <span><a href="#">Polityka prywatności</a> · <a href="#">Regulamin</a> · <a href="#">RODO</a></span>
     </div>
   </div>
@@ -235,11 +217,6 @@
 
 <script>
   (function () {
-    try {
-      var d = new Date();
-      document.getElementById('topDate').textContent =
-        d.toLocaleDateString('pl-PL', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
-    } catch (e) {}
 
     var copyBtn = document.getElementById('copyBtn');
     if (copyBtn) {
